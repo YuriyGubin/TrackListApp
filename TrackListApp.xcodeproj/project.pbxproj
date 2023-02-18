@@ -60,17 +60,49 @@
 		6A99898829A0C0520083BEEB /* TrackListApp */ = {
 			isa = PBXGroup;
 			children = (
-				6A99898929A0C0520083BEEB /* AppDelegate.swift */,
-				6A99898B29A0C0520083BEEB /* SceneDelegate.swift */,
-				6A99899F29A0CB020083BEEB /* Track.swift */,
-				6A99899D29A0C5B70083BEEB /* TrackListViewController.swift */,
-				6A9989A129A0D3D30083BEEB /* TrackDetailsViewController.swift */,
-				6A99898F29A0C0520083BEEB /* Main.storyboard */,
+				6A9989A329A0D6EA0083BEEB /* App */,
+				6A9989A429A0D7110083BEEB /* Model */,
+				6A9989A529A0D71A0083BEEB /* ViewControllers */,
+				6A9989A629A0D7280083BEEB /* Storyboards */,
 				6A99899229A0C0540083BEEB /* Assets.xcassets */,
-				6A99899429A0C0540083BEEB /* LaunchScreen.storyboard */,
-				6A99899729A0C0540083BEEB /* Info.plist */,
 			);
 			path = TrackListApp;
+			sourceTree = "<group>";
+		};
+		6A9989A329A0D6EA0083BEEB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6A99898929A0C0520083BEEB /* AppDelegate.swift */,
+				6A99898B29A0C0520083BEEB /* SceneDelegate.swift */,
+				6A99899729A0C0540083BEEB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6A9989A429A0D7110083BEEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A99899F29A0CB020083BEEB /* Track.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A9989A529A0D71A0083BEEB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A99899D29A0C5B70083BEEB /* TrackListViewController.swift */,
+				6A9989A129A0D3D30083BEEB /* TrackDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6A9989A629A0D7280083BEEB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6A99898F29A0C0520083BEEB /* Main.storyboard */,
+				6A99899429A0C0540083BEEB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 789AT898J7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackListApp/Info.plist;
+				INFOPLIST_FILE = TrackListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 789AT898J7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackListApp/Info.plist;
+				INFOPLIST_FILE = TrackListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

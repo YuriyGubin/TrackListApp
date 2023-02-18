@@ -14,6 +14,7 @@ class TrackListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
+        navigationItem.leftBarButtonItem = editButtonItem
     }
 
     // MARK: - Table view data source
@@ -41,6 +42,23 @@ class TrackListViewController: UITableViewController {
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        80
 //    }
+    
+    // Edit left menu from edit button (delete, add)
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
+    
+    // Offset content in cell by press edit button
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        false
+    }
+    
+    // Burger menu - provide capability for user to change place of cell in list
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentTrack = trackList.remove(at: sourceIndexPath.row)
+        trackList.insert(currentTrack, at: destinationIndexPath.row)
+    }
+    
     
     // MARK: - Navigation
 
