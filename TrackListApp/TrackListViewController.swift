@@ -41,16 +41,12 @@ class TrackListViewController: UITableViewController {
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        80
 //    }
-
-    
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let detailsVC = segue.destination as? TrackDetailsViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        detailsVC.track = trackList[indexPath.row]
     }
-    
-
 }
