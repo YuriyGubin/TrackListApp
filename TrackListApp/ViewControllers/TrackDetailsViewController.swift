@@ -9,7 +9,6 @@ import UIKit
 
 class TrackDetailsViewController: UIViewController {
     
-    
     @IBOutlet var artCoverImageView: UIImageView!
     @IBOutlet var trackTitleLabel: UILabel!
     
@@ -20,8 +19,4 @@ class TrackDetailsViewController: UIViewController {
         artCoverImageView.image = UIImage(named: track.title)
         trackTitleLabel.text = track.title
     }
-    
-
-    
-
 }

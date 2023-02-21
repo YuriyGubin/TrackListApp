@@ -23,7 +23,6 @@ class TrackListViewController: UITableViewController {
         trackList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "track", for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -37,12 +36,7 @@ class TrackListViewController: UITableViewController {
 
         return cell
     }
-    
-//    // MARK: - UITableViewDelegate
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        80
-//    }
-    
+
     // Edit left menu from edit button (delete, add)
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         .none
@@ -58,7 +52,6 @@ class TrackListViewController: UITableViewController {
         let currentTrack = trackList.remove(at: sourceIndexPath.row)
         trackList.insert(currentTrack, at: destinationIndexPath.row)
     }
-    
     
     // MARK: - Navigation
 
